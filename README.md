@@ -8,16 +8,17 @@ Measure your ideas with Yardstick. Yardstick is a toolkit for creating simple wi
 Usage
 -----
 Yardstick requires the following files to be included in your page:
--jQuery
-	`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>`
--yardstick.js
-	`<script src="path/to/yardstick.js" type="text/javascript"></script>`
--yardstick.less or yardstick.css
-	`<link href="path/to/yardstick.less" rel="stylesheet/less" type="text/css"/>`
--Less.js - if you choose to not pre-process the yardstick.less stylesheet.
-	`<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" type="text/javascript"></script>`
--Architects Daughter Web Font - if you use sketch fidelity
-	`<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>`
+
+* jQuery 
+	* `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>`
+* yardstick.js 	
+	* `<script src="path/to/yardstick.js" type="text/javascript"></script>`
+* yardstick.less or yardstick.css 
+	* `<link href="path/to/yardstick.less" rel="stylesheet/less" type="text/css"/>`
+* Less.js - if you choose to not pre-process the yardstick.less stylesheet 
+	* `<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" type="text/javascript"></script>`
+* Architects Daughter Web Font - if you use sketch fidelity 
+* 	`<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>`
 
 To add Yardstick to your page, put `Yardstick.initialize()` in the onload of page.
 `$(function(){
