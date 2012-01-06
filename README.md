@@ -18,7 +18,7 @@ Yardstick requires the following files to be included in your page:
 * Less.js - if you choose to not pre-process the yardstick.less stylesheet 
 	* `<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" type="text/javascript"></script>`
 * Architects Daughter Web Font - if you use sketch fidelity 
-* 	`<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>`
+	* `<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>`
 
 To add Yardstick to your page, put `Yardstick.initialize()` in the onload of page.
 `$(function(){
@@ -28,9 +28,10 @@ To add Yardstick to your page, put `Yardstick.initialize()` in the onload of pag
 
 Fidelity
 --------
-You can change the fidelity of the page by simply adding a class to the body of the page. Available fidelities are
-`ysFidelity_sketch` - (Default) Uses a hand drawn look for text and container borders.
-`ysFidelity_lofi` - Uses a greyscale palatte and simple boxes for containers.
+You can change the fidelity of the page by simply adding a class to the body of the page. Available fidelities are:
+
+* `ysFidelity_sketch` - (Default) Uses a hand drawn look for text and container borders.
+* `ysFidelity_lofi` - Uses a greyscale palatte and simple boxes for containers.
 
 You can also pass in the option `fidelity` with values of `sketch` or `lofi` in the initialize function.
 
