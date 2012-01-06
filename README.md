@@ -1,5 +1,5 @@
-Yardstic
-========
+Yardstick
+=========
 
 Overview
 --------
