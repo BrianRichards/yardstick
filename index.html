@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Yardstick</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/prettify.css">
+</head>
+
+<body>
+	<div id="pageWrapper">
+		<header>
+			<h1>Yardstick</h1>
+			<p>
+				Yardstick is a toolkit for creating simple wireframes and prototypes with HTML and JavaScript.
+			</p>
+			<div>
+				<a href="https://github.com/BrianRichards/yardstick" id="downloadButton" target="_blank">Download</a>
+			</div>
+		</header>
+		<div role="main" id="contentWell">
+			<section>
+				<h2>Overview</h2>
+				<p>
+					Measure your ideas with Yardstick. 
+				</p>
+				<p>
+					Yardstick is a toolkit for creating simple wireframes and prototypes with HTML and JavaScript.
+				</p>
+				<p>
+					Yardstick is still in early development and will go through many more changes before any alpha/beta releases are ready.
+				</p>
+			</section>
+			<section>
+				<h2>Usage</h2>
+				<h3>Setup</h3>
+				<p>Yardstick requires the following files to be included in your page:</p>
+
+				<ul id="usageList">
+					<li>
+						jQuery 
+						<ul>
+							<li><code class="prettyprint">&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></li>
+						</ul>
+					</li>
+					<li>
+						yardstick.js
+						<ul>
+							<li><code class="prettyprint">&lt;script src="path/to/yardstick.js" type="text/javascript"&gt;&lt;/script&gt;</code></li>
+						</ul>
+					</li>
+					<li>
+						yardstick.less or yardstick.css 
+						<ul>
+							<li><code class="prettyprint">&lt;link href="path/to/yardstick.less" rel="stylesheet/less" type="text/css"/&gt;</code></li>
+						</ul>
+					</li>
+					<li>
+						Less.js - if you choose to not pre-process the yardstick.less stylesheet 
+						<ul>
+							<li><code class="prettyprint">&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.3/less-1.1.3.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></li>
+						</ul>
+					</li>
+					<li>
+						Architects Daughter Web Font - if you use sketch fidelity 
+						<ul>
+							<li><code class="prettyprint">&lt;link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'&gt;</code></li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					To add Yardstick to your page, put <code class="prettyprint">Yardstick.initialize()</code> in the onload of page.
+<code class="prettyprint">$(function(){
+	Yardstick.initialize();
+});</code>
+				</p>
+				<h3>Fidelity</h3>
+				<p>
+					You can change the fidelity of the page by simply adding a class to the body of the page. Available fidelities are:
+				</p>
+				<ul>
+					<li>
+						<code class="prettyprint">ysFidelity_sketch</code> - (Default) Uses a hand drawn look for text and container borders.
+					</li>
+					<li>
+						<code class="prettyprint">ysFidelity_lofi</code> - Uses a greyscale palatte and simple boxes for containers.
+					</li>
+				</ul>
+				<p>
+					You can also pass in the option <code class="prettyprint">fidelity</code> with values of <code class="prettyprint">sketch</code> or <code class="prettyprint">lofi</code> in the initialize function.
+				</p>
+
+				<h3>Grid</h3>
+				<p>
+					Yardstick allows you to use whichever grid system you prefer, just add the appropriate files and markup.
+				</p>
+				<p>
+					If you would prefer to use a grid system in your stylesheet rather than a markup based system that requires adding classes to your HTML, consider <a href="http://semantic.gs/">http://semantic.gs/</a> as it uses less.js which is already required by Yardstick.
+				</p>
+				<p>
+					One thing to remember is that Yardstick does use padding and borders on classes like <code class="prettyprint">ysContainer</code> so you may need to wrap those containers (rather than just making them grid columns directly) in order to have your grid render properly.
+				</p>
+
+				<h3>Containers</h3>
+				<p>
+					If you would like an HTML element rendered as container simply add the class <code class="prettyprint">ysContainer</code> to the element.
+				</p>
+
+				<h3>Forms</h3>
+				<p>
+					By default, the framework will automatically style form elements on the page. To disable styling of an individual element, add the class <code class="prettyprint">ysNoStyle</code>.
+				</p>
+			</section>
+			<section>
+				<h2>Samples</h2>
+				<p>Coming Soon</p>
+			</section>
+			<section>
+				<h2>Source</h2>
+				<p>
+					The source code for Yardstick is available at <a href="https://github.com/BrianRichards/yardstick">https://github.com/BrianRichards/yardstick</a>
+				</p>
+			</section>
+			<section>
+				<h2>Roadmap</h2>
+				<p>Coming Soon</p>
+				<!--dl>
+					<dt>Next Release</dt>
+					<dd>
+						<ul>
+							<li></li>
+						</ul>	
+					</dd>
+					<dt>Future Releases</dt>
+					<dd>
+						<ul>
+							<li></li>
+						</ul>	
+					</dd>
+				</dl-->	
+			</section>
+			<section>
+				<h2>History</h2>
+				<p></p>
+				<dl>
+					<dt>Version 0.0.1</dt>
+					<dd>
+						<ul>
+							<li>Initial Commit</li>
+						</ul>	
+					</dd>
+				</dl>	
+			</section>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="./js/prettify.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			prettyPrint();
+		});
+	</script>
+
+</body>
+</html>

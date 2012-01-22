@@ -1,0 +1,128 @@
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:.85em;
+	line-height:1.7em;
+	margin: 0;
+	padding: 0;
+	background-color:#622;
+	background-image: url("../images/bg.png");
+	color:#333;
+}
+#pageWrapper{
+	
+}
+header{
+	background-color:#FFF;
+	padding:10px 20px;
+	overflow:auto;
+}
+header h1{
+	float:left;
+}
+header p{
+	display:none;
+	font-size:.9em;
+}
+#contentWell{
+	background-color:#FFF;
+	padding:20px;
+}
+section{
+	margin-bottom:40px;
+}
+h2{
+	border-bottom:2px solid #CCC;
+}
+h3{
+	margin-top:30px;
+}
+#downloadButton{
+	border:1px solid #666;
+	display:block;
+	width:150px;
+	height:28px;
+	text-align:center;
+	padding-top:5px;
+	text-decoration:none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color:#FFF;
+	font-weight:bold;
+	background-image: -moz-linear-gradient(top, #955, #400); 
+	background-image: -webkit-linear-gradient(top, #955, #400); 
+	background-image: -ms-linear-gradient(top, #955, #400);
+	background-image: linear-gradient(top, #955, #400);
+	float:right;
+}
+code{
+	font-size:.9em;
+
+}
+#usageList{
+	padding-left:15px;
+}
+#usageList ul{
+	padding-left:10px;
+	list-style-type:none;
+}
+#usageList code{
+	display:block;
+	margin-top:0px;
+	margin-bottom:25px;
+}
+
+
+
+@media only screen and (min-width:480px) {
+
+}
+
+
+@media only screen and (min-width:768px) {
+	#pageWrapper{
+		margin-left:auto;
+		margin-right:auto;
+		width:700px;
+	}
+	header{
+		
+	}
+	#contentWell{
+		
+	}
+}
+
+
+@media only screen and (min-width:1024px) {
+	#pageWrapper{
+		margin-left:auto;
+		margin-right:auto;
+		width:960px;
+	}
+	header{
+		width:220px;
+		position:fixed;
+		padding:20px;
+		-moz-box-shadow:0px 0px 10px 10px #400;
+		-webkit-box-shadow:0px 0px 10px 10px #400;
+		box-shadow:0px 0px 10px 10px #400;
+	}
+	header h1{
+		float:none;
+	}
+	header p{
+		display:block;
+		margin-bottom:35px;
+	}
+	#downloadButton{
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+	}
+	#contentWell{
+		width:600px;
+		margin-left:280px;
+		padding:20px 40px;
+	}
+}
