@@ -33,7 +33,7 @@ var Yardstick = {
 	setupLabels: function(){
 		$("input[data-ysLabel], select[data-ysLabel], textarea[data-ysLabel]").each(function(idx){
 			var labelLoc = "ysLabel" + Yardstick.options.labelLocation;
-			if ($(this).data("yslabelloc") != undefined ){
+			if ($(this).data("yslabelloc") !== undefined ){
 				labelLoc = "ysLabel" + $(this).data("yslabelloc");
 			}
 			var labelText = $(this).data("yslabel");
